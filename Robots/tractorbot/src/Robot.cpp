@@ -14,6 +14,7 @@ void Robot::begin(void)
     pinMode(PIN_LIDAR_ENABLE, OUTPUT);
     digitalWrite(PIN_LIDAR_ENABLE, LOW);
     Serial.begin(115200);
+    ledCommand(0, 0, 0, 0);
 }
 
 void Robot::wheelCommand(int wa, int wb, int wc, int wd){

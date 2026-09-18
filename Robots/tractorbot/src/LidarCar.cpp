@@ -585,7 +585,7 @@ void LidarCar::ControlMode(void){
    contro_mode++;
    if(contro_mode >= 4) contro_mode = 0;
    while(digitalRead(37) == LOW);
-  }
+  }    M5.Lcd.drawRect(3, 150, M5.Lcd.width()-6, 15, WHITE);
 
   Serial.print("contro_mode = ");Serial.println(contro_mode);
 
